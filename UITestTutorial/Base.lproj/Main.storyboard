@@ -20,18 +20,29 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Yc-Ug-X8k">
                                 <rect key="frame" x="270" y="318" width="55" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="myButton2"/>
                                 <state key="normal" title="Button2"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yh4-r8-6MB">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <accessibility key="accessibilityConfiguration" identifier="myLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXh-vJ-3v1">
                                 <rect key="frame" x="50" y="318" width="52" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="myButton1"/>
                                 <state key="normal" title="Button1"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Yh4-r8-6MB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CSF-LV-ztq"/>
                             <constraint firstItem="NXh-vJ-3v1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="H7p-6V-D8O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Yc-Ug-X8k" secondAttribute="trailing" constant="50" id="VBS-yd-yPs"/>
                             <constraint firstItem="0Yc-Ug-X8k" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bmV-na-BpO"/>
+                            <constraint firstItem="Yh4-r8-6MB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qZQ-QJ-qS2"/>
                             <constraint firstItem="NXh-vJ-3v1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="tUJ-tM-wNd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
