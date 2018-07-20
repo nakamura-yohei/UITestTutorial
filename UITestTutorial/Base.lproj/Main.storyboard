@@ -22,6 +22,9 @@
                                 <rect key="frame" x="270" y="318" width="55" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="myButton2"/>
                                 <state key="normal" title="Button2"/>
+                                <connections>
+                                    <action selector="touchUpButton2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8dc-w6-aVA"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yh4-r8-6MB">
                                 <rect key="frame" x="166" y="323" width="42" height="21"/>
@@ -34,6 +37,9 @@
                                 <rect key="frame" x="50" y="318" width="52" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="myButton1"/>
                                 <state key="normal" title="Button1"/>
+                                <connections>
+                                    <action selector="touchUpButton1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vec-8P-W3l"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,6 +53,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="myLabel" destination="Yh4-r8-6MB" id="0Kk-wq-R7c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
