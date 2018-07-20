@@ -28,9 +28,22 @@ class UITestTutorialUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testButton1TouchUp() {
+        let app = XCUIApplication()
+        let button1 = app.buttons["myButton1"]
+        XCTAssertTrue(button1.isEnabled)
+        button1.tap()
+        let myLabel = app.staticTexts["myLabel"]
+        XCTAssertEqual(myLabel.label, "Button1 touch upped")
+    }
+    
+    func testButton2TouchUp() {
+        let app = XCUIApplication()
+        let button2 = app.buttons["myButton2"]
+        XCTAssertTrue(button2.isEnabled)
+        button2.tap()
+        let myLabel = app.staticTexts["myLabel"]
+        XCTAssertEqual(myLabel.label, "Button2 touch upped")
     }
     
 }
